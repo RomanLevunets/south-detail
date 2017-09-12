@@ -36,9 +36,9 @@ $(document).ready(function() {
     }item();
 
     //header menu active
-    $('.navigation-item-meth').click(function() {
+    $('.lk-tabs li ').click(function() {
         if (!$(this).hasClass('active')) {
-            $('.navigation-item-meth').removeClass('active');
+            $('.lk-tabs li').removeClass('active');
             $(this).addClass('active');
         }
     });
@@ -49,6 +49,21 @@ $(document).ready(function() {
         $('.menu').toggleClass('open');
         $('.wrapper').toggleClass('bg-active');
 
+    });
+
+    //Спинер
+    $(".spin-up").click(function() {
+        var value = parseInt($(this).closest(".spinner").find("input").val());
+        if (value != 99){
+            $(this).closest(".spinner").find("input").val(value + 1);
+        }
+    });
+
+    $(".spin-down").click(function() {
+        var value = parseInt($(this).closest(".spinner").find("input").val());
+        if (value != 1)	{
+            $(this).closest(".spinner").find("input").val(value - 1);
+        }
     });
 
 });

@@ -81,9 +81,9 @@
     height: 74px;
     line-height: 74px;
     float: left;
-    -webkit-transition: background 0.2s linear;
-    -o-transition: background 0.2s linear;
-    transition: background 0.2s linear; }
+    -webkit-transition: background .2s linear;
+    -o-transition: background .2s linear;
+    transition: background .2s linear; }
     .container-goCatalog:hover {
       background: #ff1c25; }
 
@@ -1086,3 +1086,371 @@ nav {
     .complete p span {
       font: 100% "MyriadPro-Bold", sans-serif;
       color: #ed1c24; }
+  .complete a {
+    margin-top: 35px;
+    display: block;
+    text-align: center;
+    width: 360px;
+    background: #ed1c24;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 25px;
+    -webkit-transition: background .2s linear;
+    -o-transition: background .2s linear;
+    transition: background .2s linear; }
+    .complete a:hover {
+      background: #ff1c25; }
+
+.basket-info {
+  padding: 30px 15px;
+  font-size: 0; }
+  .basket-info li {
+    display: inline-block;
+    font-size: 18px;
+    vertical-align: middle;
+    margin-right: 50px; }
+    .basket-info li svg {
+      width: 30px;
+      height: 30px;
+      fill: #ed1c24;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 20px; }
+    .basket-info li span {
+      font: 100% "MyriadPro-Bold", sans-serif;
+      margin-left: 12px;
+      font-size: 18px;
+      display: inline-block;
+      color: #ed1c24;
+      vertical-align: middle; }
+
+.basketTable {
+  border-bottom: 1px solid #d7d7d7;
+  width: 100%; }
+  .basketTable tr {
+    position: relative;
+    border-top: 1px solid #d7d7d7; }
+    .basketTable tr th {
+      padding-top: 30px;
+      padding-bottom: 30px; }
+      .basketTable tr th:first-child {
+        width: 68px;
+        text-align: center; }
+      .basketTable tr th:nth-child(2) {
+        width: 195px; }
+      .basketTable tr th:nth-child(3) {
+        width: 110px; }
+      .basketTable tr th:nth-child(4) {
+        width: 420px; }
+      .basketTable tr th:nth-child(5) {
+        width: 100px;
+        text-align: center; }
+      .basketTable tr th:last-child {
+        color: #ed1c24; }
+    .basketTable tr td {
+      padding-top: 30px;
+      padding-bottom: 30px; }
+      .basketTable tr td a {
+        text-decoration: none;
+        color: #3d72a4; }
+        .basketTable tr td a:hover {
+          text-decoration: underline; }
+      .basketTable tr td > p {
+        font-size: 14px;
+        display: inline-block;
+        background: -webkit-gradient(linear, left top, left bottom, from(#f1f1f1), to(#d7d7d7));
+        background: -webkit-linear-gradient(top, #f1f1f1 0%, #d7d7d7 100%);
+        background: -o-linear-gradient(top, #f1f1f1 0%, #d7d7d7 100%);
+        background: linear-gradient(to bottom, #f1f1f1 0%, #d7d7d7 100%);
+        border: 1px solid #d7d7d7;
+        padding: 10px;
+        -webkit-border-radius: 3px;
+                border-radius: 3px;
+        cursor: pointer;
+        margin-top: 15px;
+        vertical-align: middle;
+        line-height: 1; }
+        .basketTable tr td > p:hover svg {
+          fill: #ed1c24; }
+        .basketTable tr td > p svg {
+          width: 17px;
+          height: 17px;
+          fill: #666;
+          vertical-align: middle;
+          display: inline-block;
+          margin-right: 5px;
+          -webkit-transition: fill .2s linear;
+          -o-transition: fill .2s linear;
+          transition: fill .2s linear;
+          line-height: 1; }
+      .basketTable tr td:first-child {
+        width: 68px;
+        text-align: center; }
+      .basketTable tr td:nth-child(4) {
+        display: inline-block;
+        max-width: 410px; }
+      .basketTable tr td:nth-child(5) {
+        width: 100px;
+        text-align: center; }
+      .basketTable tr td:last-child {
+        display: inline-block; }
+        .basketTable tr td:last-child svg {
+          width: 16px;
+          height: 16px;
+          fill: #ed1c24;
+          cursor: pointer; }
+
+.spinner {
+  width: 70px;
+  height: 36px;
+  border: 1px solid #d7d7d7;
+  font-size: 0;
+  margin: 0 auto; }
+  .spinner p {
+    display: inline-block;
+    font-size: 20px;
+    vertical-align: middle;
+    height: 100%;
+    text-align: center;
+    line-height: 36px;
+    width: 35%;
+    background: #efefef;
+    cursor: pointer;
+    -webkit-transition: background .2s linear;
+    -o-transition: background .2s linear;
+    transition: background .2s linear; }
+    .spinner p:hover {
+      background: #d7d7d7; }
+    .spinner p:first-child {
+      border-right: 1px solid #d7d7d7;
+      margin-right: auto; }
+    .spinner p:last-child {
+      border-left: 1px solid #d7d7d7; }
+  .spinner input {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    width: 30%;
+    border: none;
+    text-align: center;
+    font: 100% "OpenSans-Light", sans-serif;
+    font-size: 16px; }
+
+.basketTotal {
+  padding: 20px;
+  background: #efefef; }
+  .basketTotal-clear {
+    float: left; }
+    .basketTotal-clear a {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 15px;
+      color: #1d1e1e; }
+      .basketTotal-clear a:hover {
+        text-decoration: none; }
+    .basketTotal-clear svg {
+      width: 23px;
+      fill: #1d1e1e;
+      height: 23px;
+      display: inline-block;
+      vertical-align: middle; }
+  .basketTotal-totals {
+    font-size: 0;
+    float: right;
+    padding-top: 20px; }
+    .basketTotal-totals p {
+      display: inline-block;
+      font: 100% "MyriadPro-Bold", sans-serif;
+      font-size: 16px;
+      margin-right: 50px; }
+    .basketTotal-totals span {
+      display: inline-block;
+      font: 100% "MyriadPro-Bold", sans-serif;
+      font-size: 16px;
+      color: #ed1c24;
+      margin-right: 35px; }
+
+.basket-issue a {
+  margin-left: auto;
+  display: block;
+  text-align: center;
+  width: 360px;
+  background: #ed1c24;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 25px;
+  -webkit-transition: background .2s linear;
+  -o-transition: background .2s linear;
+  transition: background .2s linear; }
+  .basket-issue a:hover {
+    background: #ff1c25; }
+
+.basket-save {
+  padding-top: 45px;
+  padding-bottom: 100px; }
+  .basket-save > p {
+    padding: 20px 40px;
+    background: #efefef;
+    font: 100% "MyriadPro-Bold", sans-serif;
+    font-size: 18px; }
+
+.lk-top {
+  padding-top: 25px; }
+
+.lk-tabs {
+  font-size: 0;
+  border: 1px solid #d7d7d7; }
+  .lk-tabs li {
+    display: inline-block;
+    width: 50%;
+    text-align: center; }
+    .lk-tabs li.active a {
+      background: #fff;
+      color: #1d1e1e; }
+    .lk-tabs li a {
+      font-size: 18px;
+      text-decoration: none;
+      width: 100%;
+      display: inline-block;
+      background: #d7d7d7;
+      color: #888;
+      padding: 20px 0; }
+
+.orders-info {
+  padding: 20px;
+  background: #efefef; }
+  .orders-info p {
+    float: left; }
+    .orders-info p span {
+      font: 100% "MyriadPro-Bold", sans-serif;
+      font-size: 18px;
+      color: #ed1c24; }
+
+.orders-right {
+  float: right;
+  position: relative; }
+  .orders-right::after {
+    content: " ";
+    position: absolute;
+    right: 0;
+    width: 0;
+    height: 0;
+    top: 0;
+    display: block;
+    border: 8px solid;
+    border-color: transparent transparent #ed1c24 transparent; }
+  .orders-right p {
+    display: inline-block;
+    margin-right: 50px; }
+    .orders-right p:first-child {
+      text-transform: uppercase;
+      margin-right: 125px; }
+
+.orders-totals {
+  padding: 15px 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.orders-method p a {
+  text-decoration: none;
+  color: #ed1c24;
+  display: inline-block;
+  margin-left: 5px; }
+  .orders-method p a:hover {
+    text-decoration: underline; }
+
+.orders-clear {
+  font-size: 0; }
+  .orders-clear a {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 15px;
+    color: #1d1e1e;
+    font-size: 16px; }
+    .orders-clear a:hover {
+      text-decoration: none; }
+  .orders-clear svg {
+    width: 23px;
+    fill: #1d1e1e;
+    height: 23px;
+    display: inline-block;
+    vertical-align: middle; }
+
+.orders-total {
+  font-size: 0; }
+  .orders-total p {
+    display: inline-block;
+    font: 100% "MyriadPro-Bold", sans-serif;
+    font-size: 18px;
+    margin-right: 50px; }
+  .orders-total span {
+    display: inline-block;
+    font: 100% "MyriadPro-Bold", sans-serif;
+    font-size: 18px;
+    color: #ed1c24;
+    margin-right: 35px; }
+
+.orderTable {
+  width: 1140px; }
+  .orderTable tr th {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+    .orderTable tr th:first-child {
+      width: 68px;
+      text-align: center; }
+    .orderTable tr th:nth-child(2) {
+      width: 520px; }
+    .orderTable tr th:nth-child(3) {
+      width: 165px;
+      text-align: center; }
+    .orderTable tr th:nth-child(4) {
+      width: 210px;
+      text-align: center; }
+    .orderTable tr th:nth-child(5) {
+      width: 165px;
+      text-align: center;
+      color: #ed1c24; }
+  .orderTable tr td {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center; }
+    .orderTable tr td:nth-child(2) {
+      text-align: left; }
+    .orderTable tr td:last-child {
+      display: inline-block; }
+      .orderTable tr td:last-child svg {
+        width: 16px;
+        height: 16px;
+        fill: #ed1c24;
+        cursor: pointer; }
+    .orderTable tr td a {
+      text-decoration: none;
+      color: #3d72a4;
+      margin-right: 15px; }
+      .orderTable tr td a:hover {
+        text-decoration: underline; }
+
+.break {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  opacity: .7; }
+  .break p span {
+    color: #1d1e1e; }
+  .break .orders-right::after {
+    top: 8px;
+    border-color: #ed1c24 transparent transparent transparent; }
