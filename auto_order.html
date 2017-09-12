@@ -73,12 +73,109 @@
             <button name="find-sparePart">Найти</button>
         </form>
     </div>
-    <section class="section-contact">
+    <section class="section-about">
         <div class="container">
-            <div class="complete">
-                <p>Заказ <span>254132 Е12</span> оформлен. При поступлении товара на точку выдачи, вам придет смс-уведомление.</p>
-                <p>Благодарим за внимание!</p>
-                <a href="#">Вернуться на сайт</a>
+            <div class="ordering">
+                <p>Оформление заказа</p>
+                <table class="orderingTable">
+                    <tr>
+                        <td>1x</td>
+                        <td><img src="img/small-details/photo1.png" alt="photo1"></td>
+                        <td><a href="#">Масляный фильтр</a>MERCEDES-BENZ</td>
+                        <td>20 125 р.</td>
+                        <td>
+                            <a href="#" class="deleted">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+<g>
+	<g>
+		<polygon class="st0" points="16,0.7 15.3,0 8,7.3 0.7,0 0,0.7 7.3,8 0,15.3 0.7,16 8,8.7 15.3,16 16,15.3 8.7,8 		"/>
+	</g>
+</g>
+</svg>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1x</td>
+                        <td><img src="img/small-details/photo2.png" alt="photo2"></td>
+                        <td><a href="#">Масляный фильтр</a>DAEWOO</td>
+                        <td>200 125 р.</td>
+                        <td>
+                            <a href="#" class="deleted">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+<g>
+	<g>
+		<polygon class="st0" points="16,0.7 15.3,0 8,7.3 0.7,0 0,0.7 7.3,8 0,15.3 0.7,16 8,8.7 15.3,16 16,15.3 8.7,8 		"/>
+	</g>
+</g>
+</svg>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+                <div class="ordering-total">
+                    <p>Итого: <span>24 125,40 р.</span></p>
+                </div>
+
+                <div class="info-wrap">
+                    <div class="info-left">
+                        <ul class="info-top">
+                            <li>Информация о покупателе</li>
+                            <li>Уже зарегистрированы? <a href="#">Войдите</a></li>
+                        </ul>
+                        <form action="/" class="user-data">
+                            <table class="info-user">
+                                <tr>
+                                    <td>Фамилия *</td>
+                                    <td><input type="text" name="surname" placeholder="Фамилия" required></td>
+                                </tr>
+                                <tr>
+                                    <td>Имя *</td>
+                                    <td><input type="text" name="name" placeholder="Имя" required></td>
+                                </tr>
+                                <tr>
+                                    <td>Отчество</td>
+                                    <td><input type="text" name="middle-name" placeholder="Отчество"></td>
+                                </tr>
+                                <tr>
+                                    <td>Телефон *</td>
+                                    <td><input type="text" name="phone" placeholder="Телефон" id="phone" required></td>
+                                </tr>
+                                <tr>
+                                    <td>Email *</td>
+                                    <td><input type="email" name="email" placeholder="Email" id="email" required></td>
+                                </tr>
+                                <tr>
+                                    <td>Регион, город</td>
+                                    <td><input type="text" name="location" placeholder="Регион, город" id="location">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Комментарий к заказу</td>
+                                    <td><textarea name="location" placeholder="Комментарий к заказу"
+                                                  id="comment"></textarea></td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                    <div class="info-right">
+                        <p>Способ оплаты</p>
+                        <form action="/" class="form-select">
+                            <input type="radio" name="select" checked id="r1">
+                            <label for="r1">наличный</label>
+                            <input type="radio" name="select" id="r2">
+                            <label for="r2">безналичный</label>
+                        </form>
+                    </div>
+                </div>
+                <div class="ordering-total">
+                    <p>К оплате: <span>24 125,40 р.</span></p>
+                </div>
+                <div class="basket-issue">
+                    <a href="#">Оформить заказ</a>
+                </div>
             </div>
         </div>
     </section>

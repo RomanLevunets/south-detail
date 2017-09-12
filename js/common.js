@@ -20,7 +20,7 @@ $(document).ready(function() {
     });
 
     //pop-up
-    $('.menu li a').magnificPopup({
+    $('.main-topSearch a, .searchBasket-basket').magnificPopup({
         removalDelay: 250,
         mainClass: 'mfp-fade'
     });
