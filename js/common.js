@@ -17,6 +17,20 @@ $(document).ready(function() {
         slidesToScroll: 1,
         // autoplay: true,
         // autoplaySpeed: 4000,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 680,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 
     //pop-up
@@ -46,7 +60,7 @@ $(document).ready(function() {
     //burger animation
     $('.burger').click(function(){
         $('.burger__line').toggleClass('active-b');
-        $('.menu').toggleClass('open');
+        $('.Lside').toggleClass('active');
         $('.wrapper').toggleClass('bg-active');
 
     });

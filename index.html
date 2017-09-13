@@ -25,7 +25,7 @@
                     <a href="#">+7978 710 1202</a>
                     <span>г. Севастополь, Фиолентовское шосссе, 6</span>
                 </div>
-                <div class="account">
+                <a href="#" class="account">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	            viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
                     <path d="M12,11.8c2.3,0,4.2-2.3,4.2-5.1c0-2.8-0.6-5.1-4.2-5.1c-3.6,0-4.2,2.3-4.2,5.1C7.8,9.5,9.7,11.8,12,11.8L12,11.8z M12,11.8"
@@ -34,7 +34,7 @@
                 	c0,0.1,0,0.2,0,0.5c0,0,1.2,2.4,8,2.4c6.8,0,8-2.4,8-2.4c0-0.2,0-0.3,0-0.4C20,19.8,20,19.7,20,19.4L20,19.4z M20,19.4"/>
                     </svg>
                     <p>Мой аккаунт</p>
-                </div>
+                </a>
             </div>
         </div>
         <div class="header-bot">
@@ -46,6 +46,12 @@
                         <li><a href="#">Мои заказы</a></li>
                         <li><a href="#">Контакты</a></li>
                     </ul>
+                    <div class="burger">
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                    </div>
                 </nav>
                 <form action="/" class="global-search">
                     <input type="search" name="global_search" id="global_search" placeholder="Поиск по сайту" required>
@@ -66,42 +72,9 @@
         </div>
     </header>
     <div class="main clearfix">
-        <aside class="main-sidebar">
-            <ul class="catalog">
-                <li><a href="#">Автоаксессуары</a></li>
-                <li><a href="#">Моторные масла</a></li>
-                <li><a href="#">Gear масла</a></li>
-                <li><a href="#">Dot жидкости</a></li>
-                <li><a href="#">Антифриз / тосол</a></li>
-                <li><a href="#">Герметики</a></li>
-                <li><a href="#">Автохимия</a></li>
-                <li><a href="#">Аккумуляторы</a></li>
-                <li><a href="#">Автолампы</a></li>
-                <li><a href="#">Дворники</a></li>
-                <li><a href="#">Шины</a></li>
-                <li><a href="#">Диски</a></li>
-                <li><a href="#">Колпаки колесные</a></li>
-            </ul>
-            <div class="mainNews">
-                <h5>Новости</h5>
-                <div class="mainNews-item">
-                    <a href="#" class="mainNews-item-img"
-                       style="background-image: url('img/main-news/photo1.jpg');"></a>
-                    <a href="#">С точки зрения банальной эрyдиции</a>
-                    <span>каждый индивидyyм, критически мотивирyющий абстракцию, не может игнорировать критерии yтопического сyбьективизма</span>
-                </div>
-                <div class="mainNews-item">
-                    <a href="#" class="mainNews-item-img"
-                       style="background-image: url('img/main-news/photo2.jpg');"></a>
-                    <a href="#">концептyально интерпретирyя общепринятые </a>
-                    <span>каждый индивидyyм, критически мотивирyющий абстракцию, не может игнорировать критерии yтопического сyбьективизма</span>
-                </div>
-                <a href="#">Все новости</a>
-            </div>
-        </aside>
         <div class="main-right">
             <div class="main-topSearch clearfix">
-                <form action="/" class="search-code">
+                <form action="/" class="search-code clearfix">
                     <label for="search-code"></label>
                     <input type="search" name="search-code" placeholder="Введите код запчасти" id="search-code"
                            required>
@@ -400,6 +373,39 @@
                 </ul>
             </div>
         </div>
+        <aside class="main-sidebar clearfix">
+            <ul class="catalog">
+                <li><a href="#">Автоаксессуары</a></li>
+                <li><a href="#">Моторные масла</a></li>
+                <li><a href="#">Gear масла</a></li>
+                <li><a href="#">Dot жидкости</a></li>
+                <li><a href="#">Антифриз / тосол</a></li>
+                <li><a href="#">Герметики</a></li>
+                <li><a href="#">Автохимия</a></li>
+                <li><a href="#">Аккумуляторы</a></li>
+                <li><a href="#">Автолампы</a></li>
+                <li><a href="#">Дворники</a></li>
+                <li><a href="#">Шины</a></li>
+                <li><a href="#">Диски</a></li>
+                <li><a href="#">Колпаки колесные</a></li>
+            </ul>
+            <div class="mainNews">
+                <h5>Новости</h5>
+                <div class="mainNews-item">
+                    <a href="#" class="mainNews-item-img"
+                       style="background-image: url('img/main-news/photo1.jpg');"></a>
+                    <a href="#">С точки зрения банальной эрyдиции</a>
+                    <span>каждый индивидyyм, критически мотивирyющий абстракцию, не может игнорировать критерии yтопического сyбьективизма</span>
+                </div>
+                <div class="mainNews-item">
+                    <a href="#" class="mainNews-item-img"
+                       style="background-image: url('img/main-news/photo2.jpg');"></a>
+                    <a href="#">концептyально интерпретирyя общепринятые </a>
+                    <span>каждый индивидyyм, критически мотивирyющий абстракцию, не может игнорировать критерии yтопического сyбьективизма</span>
+                </div>
+                <a href="#">Все новости</a>
+            </div>
+        </aside>
     </div>
     <section class="section-goods">
         <div class="container">
@@ -642,6 +648,21 @@
                 <li><a href="#">Продолжить покупки</a></li>
                 <li><a href="#">Оформить заказ</a></li>
             </ul>
+        </div>
+    </div>
+    <div class="Lside ">
+        <p>Меню</p>
+        <ul class="Lmenu">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Мои заказы</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+        <p>Связь с нами</p>
+        <div class="Lfeedback">
+            <a href="#">+7978 770 3491</a>
+            <a href="#">+7978 710 1202</a>
+            <p>г. Севастополь, Фиолентовское шосссе, 6</p>
         </div>
     </div>
 </div>
