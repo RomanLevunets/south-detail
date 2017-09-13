@@ -25,7 +25,7 @@
                     <a href="#">+7978 710 1202</a>
                     <span>г. Севастополь, Фиолентовское шосссе, 6</span>
                 </div>
-                <div class="account">
+                <a href="#" class="account">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	            viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
                     <path d="M12,11.8c2.3,0,4.2-2.3,4.2-5.1c0-2.8-0.6-5.1-4.2-5.1c-3.6,0-4.2,2.3-4.2,5.1C7.8,9.5,9.7,11.8,12,11.8L12,11.8z M12,11.8"
@@ -34,7 +34,7 @@
                 	c0,0.1,0,0.2,0,0.5c0,0,1.2,2.4,8,2.4c6.8,0,8-2.4,8-2.4c0-0.2,0-0.3,0-0.4C20,19.8,20,19.7,20,19.4L20,19.4z M20,19.4"/>
                     </svg>
                     <p>Мой аккаунт</p>
-                </div>
+                </a>
             </div>
         </div>
         <div class="header-bot">
@@ -104,6 +104,7 @@
                 </div>
                 <div class="basket-bot">
                     <table class="basketTable">
+                        <thead>
                         <tr>
                             <th>№</th>
                             <th>Наименование</th>
@@ -114,9 +115,10 @@
                             <th>Сумма</th>
                             <th></th>
                         </tr>
+                        </thead>
                         <tr>
-                            <td>1.</td>
-                            <td>
+                            <td data-title="№">1</td>
+                            <td data-title="Наименование">
                                 <a href="#">Масляный фильтр</a>
                                 <p>
                                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -136,20 +138,21 @@
                                     Сохранить на потом
                                 </p>
                             </td>
-                            <td>OC90</td>
-                            <td>Масляный фильтр соед. резьба M18x1,5 Внутренний диаметр 2 62 мм. высота 80 мм Диаметр
+                            <td data-title="Код товара">OC90</td>
+                            <td data-title="Описание">Масляный фильтр соед. резьба M18x1,5 Внутренний диаметр 2 62 мм.
+                                высота 80 мм Диаметр
                                 корпуса 76 мм . Рекомендуемый специальный инструмент OCS 1 прокладки 72 мм .
                                 Накручиваемый фильтр
                             </td>
-                            <td>
+                            <td data-title="К-во">
                                 <div class="spinner">
                                     <p class="spin-down">-</p>
                                     <input type="text" value="1">
                                     <p class="spin-up">+</p>
                                 </div>
                             </td>
-                            <td>20 125 р.</td>
-                            <td>20 125 р.</td>
+                            <td data-title="Цена">20 125 р.</td>
+                            <td data-title="Сумма">20 125 р.</td>
                             <td>
                                 <a href="#" class="deleted">
                                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -164,8 +167,8 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>2.</td>
-                            <td>
+                            <td data-title="№">2</td>
+                            <td data-title="Наименование">
                                 <a href="#">Масляный фильтр</a>
                                 <p>
                                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -185,19 +188,19 @@
                                     Сохранить на потом
                                 </p>
                             </td>
-                            <td>94797406</td>
-                            <td>Масляный фильтр соед. резьба M18x1,5 Внутренний диаметр 2 62 мм. высота 80 мм
+                            <td data-title="Код товара">94797406</td>
+                            <td data-title="Описание">Масляный фильтр соед. резьба M18x1,5 Внутренний диаметр 2 62 мм. высота 80 мм
                                 Диаметр корпуса 76 мм.
                             </td>
-                            <td>
+                            <td data-title="К-во">
                                 <div class="spinner">
                                     <p class="spin-down">-</p>
                                     <input type="text" value="1">
                                     <p class="spin-up">+</p>
                                 </div>
                             </td>
-                            <td>40,10 р.</td>
-                            <td>40,10 р.</td>
+                            <td data-title="Цена">40,10 р.</td>
+                            <td data-title="Сумма">40,10 р.</td>
                             <td><a href="#" class="deleted">
                                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
@@ -236,6 +239,7 @@
                 <div class="basket-save">
                     <p>Сохраненные товары</p>
                     <table class="basketTable">
+                        <thead>
                         <tr>
                             <th>№</th>
                             <th>Наименование</th>
@@ -246,9 +250,10 @@
                             <th>Сумма</th>
                             <th></th>
                         </tr>
+                        </thead>
                         <tr>
-                            <td>1.</td>
-                            <td>
+                            <td data-title="№">2</td>
+                            <td data-title="Наименование">
                                 <a href="#">Масляный фильтр</a>
                                 <p>
                                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -268,20 +273,19 @@
                                     Сохранить на потом
                                 </p>
                             </td>
-                            <td>OC90</td>
-                            <td>Масляный фильтр соед. резьба M18x1,5 Внутренний диаметр 2 62 мм. высота 80 мм Диаметр
-                                корпуса 76 мм . Рекомендуемый специальный инструмент OCS 1 прокладки 72 мм .
-                                Накручиваемый фильтр
+                            <td data-title="Код товара">94797406</td>
+                            <td data-title="Описание">Масляный фильтр соед. резьба M18x1,5 Внутренний диаметр 2 62 мм. высота 80 мм
+                                Диаметр корпуса 76 мм.
                             </td>
-                            <td>
+                            <td data-title="К-во">
                                 <div class="spinner">
                                     <p class="spin-down">-</p>
                                     <input type="text" value="1">
                                     <p class="spin-up">+</p>
                                 </div>
                             </td>
-                            <td>20 125 р.</td>
-                            <td>20 125 р.</td>
+                            <td data-title="Цена">40,10 р.</td>
+                            <td data-title="Сумма">40,10 р.</td>
                             <td><a href="#" class="deleted">
                                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
