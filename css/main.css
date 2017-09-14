@@ -31,7 +31,33 @@
   max-width: 1920px;
   margin: 0 auto;
   min-width: 320px;
-  font: 100% "OpenSans-Light", sans-serif; }
+  font: 100% "OpenSans-Light", sans-serif;
+  position: relative;
+  overflow: hidden;
+  z-index: 5; }
+  .wrapper.bg-active {
+    overflow-y: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+    .wrapper.bg-active::after {
+      display: block; }
+  .wrapper::after {
+    background: rgba(0, 0, 0, 0.8);
+    content: " ";
+    display: none;
+    -webkit-transition: .2s linear;
+    -o-transition: .2s linear;
+    transition: .2s linear;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    overflow: hidden; }
 
 .header-top {
   padding-top: 10px;
@@ -59,7 +85,7 @@
 .container {
   width: 100%;
   margin: 0 auto;
-  max-width: 1170px;
+  max-width: 1300px;
   padding: 0 15px; }
   .container h3 {
     font-size: 36px;
@@ -209,7 +235,7 @@ nav {
 
 .main {
   width: 100%;
-  max-width: 1170px;
+  max-width: 1300px;
   margin: 0 auto;
   padding-bottom: 35px; }
   .main-sidebar {
@@ -220,7 +246,7 @@ nav {
   .main-right {
     width: 100%;
     float: right;
-    max-width: 863px;
+    max-width: 1000px;
     padding: 0 15px; }
   .main-topSearch {
     height: 74px; }
@@ -236,9 +262,25 @@ nav {
       padding: 22px 25px;
       -webkit-transition: background .2s linear;
       -o-transition: background .2s linear;
-      transition: background .2s linear; }
+      transition: background .2s linear;
+      position: relative; }
+      .main-topSearch a::after {
+        content: "";
+        position: absolute;
+        -webkit-transition: background .2s linear;
+        -o-transition: background .2s linear;
+        transition: background .2s linear;
+        right: -160%;
+        top: 0;
+        bottom: 0;
+        max-width: 160%;
+        width: 160%;
+        display: inline-block;
+        background: #d7d7d7; }
       .main-topSearch a:hover {
         background: #c8c8c8; }
+        .main-topSearch a:hover::after {
+          background: #c8c8c8; }
       .main-topSearch a svg {
         display: inline-block;
         vertical-align: middle;
@@ -262,7 +304,18 @@ nav {
     padding: 20px 5px;
     display: block;
     line-height: 1;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    position: relative; }
+    .mainNews h5::after {
+      content: " ";
+      position: absolute;
+      left: -160%;
+      top: 0;
+      bottom: 0;
+      width: 160%;
+      max-width: 160%;
+      display: inline-block;
+      background: #d7d7d7; }
   .mainNews a {
     color: #ed1c24;
     font-size: 16px; }
@@ -358,7 +411,7 @@ nav {
   .search-code label {
     display: block;
     position: absolute;
-    right: 35%;
+    right: 32%;
     top: 25px;
     z-index: 2; }
     .search-code label::after {
@@ -385,7 +438,7 @@ nav {
       background: #ff1c25; }
 
 .mainSlider-item {
-  width: 100%;
+  width: 200%;
   height: 500px;
   background: #ed1c24;
   -webkit-background-size: cover;
@@ -478,6 +531,16 @@ nav {
   font-size: 0;
   height: 68px;
   position: relative; }
+  .search-mark::after {
+    content: "";
+    position: absolute;
+    right: -160%;
+    top: 0;
+    bottom: 0;
+    max-width: 160%;
+    width: 160%;
+    display: inline-block;
+    background: #d7d7d7; }
   .search-mark input {
     height: 100%;
     display: inline-block;
@@ -1890,6 +1953,7 @@ input[type="radio"]:checked + label::before {
   width: 30px;
   height: 20px;
   position: relative;
+  z-index: 999;
   cursor: pointer;
   display: none;
   right: 0;
@@ -1995,43 +2059,35 @@ input[type="radio"]:checked + label::before {
     font-size: 16px;
     text-decoration: none; }
 
-.bg-active {
-  background: rgba(0, 0, 0, 0.8);
-  -webkit-transition: .2s linear;
-  -o-transition: .2s linear;
-  transition: .2s linear;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 800; }
-
-@media (max-width: 1300px) {
+@media (max-width: 1440px) {
   .goods .slick-prev, .goods .slick-next {
     left: 40%;
     bottom: -65px; }
   .goods .slick-next {
     right: 40%;
-    left: auto; }
+    left: auto; } }
+
+@media (max-width: 1300px) {
   .news-tags {
     position: relative;
-    left: 0; } }
-
-@media (max-width: 1160px) {
-  .main-right {
-    float: none;
-    margin: 0 auto; }
-  .main-sidebar {
-    max-width: 700px;
-    margin: 0 auto;
-    float: none; }
+    left: 0; }
   .catalog {
     float: left;
     width: 50%; }
   .mainNews {
     float: right;
     width: 50%; }
+  .main-sidebar {
+    max-width: 700px;
+    margin: 0 auto;
+    float: none; }
+  .mainNews h5::after {
+    display: none; }
+  .main-right {
+    float: none;
+    margin: 0 auto; } }
+
+@media (max-width: 1160px) {
   .about-wrap {
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
@@ -2149,6 +2205,10 @@ input[type="radio"]:checked + label::before {
 @media (max-width: 768px) {
   .logo a {
     max-width: 160px; }
+  .main-topSearch a::after {
+    display: none; }
+  .search-mark::after {
+    display: none; }
   .news-desc {
     padding-left: 0; }
   .news-more a {
