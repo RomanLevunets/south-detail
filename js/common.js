@@ -65,6 +65,9 @@ $(document).ready(function() {
 
     });
 
+    $('.account').click(function () {
+        $(this).toggleClass('active');
+    });
     //Спинер
     $(".spin-up").click(function() {
         var value = parseInt($(this).closest(".spinner").find("input").val());
@@ -78,6 +81,22 @@ $(document).ready(function() {
         if (value != 1)	{
             $(this).closest(".spinner").find("input").val(value - 1);
         }
+    });
+
+    $('.changeTable a').click(function (event) {
+        event.preventDefault();
+        $(this).parents('tr').find('input').focus();
+    });
+
+
+    $('.profile-edit input').on('select',function (event) {
+        console.log('hi');
+        event.preventDefault();
+    });
+
+    $('.orders-info').click(function () {
+        $(this).next().slideToggle();
+        $(this).children('.orders-right').toggleClass('active');
     });
 
 
